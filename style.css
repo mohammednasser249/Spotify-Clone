@@ -67,7 +67,7 @@ nav .mobile img{
 /*Responsiveness part of Navigation bar*/
 
 @media (max-width:769px) {
-        ul li{
+        ul li.main{
             display: none;
         }
 }
@@ -81,3 +81,41 @@ nav .mobile img{
     }
     
 }
+
+/*Adding a side bar for mobile view */
+
+.side-bar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.side-bar nav ul.ulside{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;   
+
+}
+
+
+.side-bar nav ul li{
+ 
+ width: 100%;   
+padding: 1rem 0;
+}
+.side-bar nav ul li:hover{
+ 
+    
+    background-color: rgba(55, 55, 55, 0.75);
+    }

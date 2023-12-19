@@ -14,23 +14,49 @@
      <header>
             <nav>
                 <img src="./media/logo.png" alt="">
+               
                     <ul>
-                        <li>Premium</li>
-                        <li>Support</li>
-                        <li>Download</li>
-                        <li>|</li>
-                        <li>Sign up</li>
-                        <li>Log in</li>
+                        <li  class="main">Premium</li>
+                        <li class="main">Support</li>
+                        <li class="main">Download</li>
+                        <li class="main">|</li>
+                        <li class="main">Sign up</li>
+                        <li class="main">Log in</li>
                         <i class="fa-solid fa-twitter" style="color:white"></i>
                     </ul>
 
+                    
+
                     <div class="mobile">
-                        <img src="./media/hamburger-icon.jpg" alt="Humberger-menu">
+                        <img onclick="showSidebar()" src="./media/hamburger-icon.jpg" alt="Humberger-menu">
                     </div>
             </nav>
-
+       
 
      </header>
+     <header class="side-bar">
+        <nav>
+           
+                <ul class="ulside">
+                    
+                    <div class="mobile">
+                        <img onclick="closeSidebar()" src="./media/hamburger-icon.jpg" alt="Humberger-menu">
+                    </div>
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                    <li>Sign up</li>
+                    <li>Log in</li>
+                    <i class="fa-solid fa-twitter" style="color:white"></i>
+                </ul>
+
+                
+
+               
+        </nav>
+   
+
+ </header>
 
 <!--Main sectiion -->
      <main>
@@ -54,5 +80,18 @@
 
 
     
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector(".side-bar")
+        sidebar.style.display ='flex'
+    }
+
+    function closeSidebar()
+    {
+        const sidebar = document.querySelector(".side-bar")
+        sidebar.style.display='none'
+    }
+</script>
+
 </body>
 </html>
