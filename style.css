@@ -168,6 +168,10 @@ padding: 1rem 0;
         cursor: pointer;
         transform: scale(1.1);
     }
+    .fa-solid.fa-x{
+        color: white;
+        font-size: 2rem;
+    }
 
     /*Responsiveness for main section */
 
